@@ -438,7 +438,12 @@ foreach( $all_buttons as $button => $name ) {
 </ul>
 </div>
 
+<!--XTEC ************ MODIFICAT - Localization
+//2014.12.16 @jmiro227 -->
+<p class="tadv-more-plugins"><?php _e( 'Also enable:', 'tinymce-advanced'); ?>
+<!--************ ORIGINAL
 <p class="tadv-more-plugins"><?php _e( 'Also enable:' ); ?>
+************ FI -->
 	<label>
 	<input type="checkbox" name="advlist" id="advlist" <?php if ( $this->check_setting('advlist') ) echo ' checked="checked"'; ?> />
 	<?php _e('List Style Options', 'tinymce-advanced'); ?>
