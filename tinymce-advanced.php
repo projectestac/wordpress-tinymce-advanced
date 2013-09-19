@@ -232,6 +232,72 @@ class Tinymce_Advanced {
 		if ( ! empty( $this->all_buttons ) )
 			return $this->all_buttons;
 
+//XTEC ************ MODIFICAT - Localization
+//2014.16.12 @jmiro227
+		$buttons = array(
+			// Core
+			'bold' => __('Bold', 'tinymce-advanced'),
+			'italic' => __('Italic', 'tinymce-advanced'),
+			'underline' => __('Underline', 'tinymce-advanced'),
+			'strikethrough' => __('Strikethrough', 'tinymce-advanced'),
+			'alignleft' => __('Align left', 'tinymce-advanced'),
+			'aligncenter' => __('Align center', 'tinymce-advanced'),
+			'alignright' => __('Align right', 'tinymce-advanced'),
+			'alignjustify' => __('Justify', 'tinymce-advanced'),
+			'styleselect' => __('Formats', 'tinymce-advanced'),
+			'formatselect' => __('Paragraph', 'tinymce-advanced'),
+			'fontselect' => __('Font Family', 'tinymce-advanced'),
+			'fontsizeselect' => __('Font Sizes', 'tinymce-advanced'),
+			'cut' => __('Cut', 'tinymce-advanced'),
+			'copy' => __('Copy', 'tinymce-advanced'),
+			'paste' => __('Paste', 'tinymce-advanced'),
+			'bullist' => __('Bulleted list', 'tinymce-advanced'),
+			'numlist' => __('Numbered list', 'tinymce-advanced'),
+			'outdent' => __('Decrease indent', 'tinymce-advanced'),
+			'indent' => __('Increase indent', 'tinymce-advanced'),
+			'blockquote' => __('Blockquote', 'tinymce-advanced'),
+			'undo' => __('Undo', 'tinymce-advanced'),
+			'redo' => __('Redo', 'tinymce-advanced'),
+			'removeformat' => __('Clear formatting', 'tinymce-advanced'),
+			'subscript' => __('Subscript', 'tinymce-advanced'),
+			'superscript' => __('Superscript', 'tinymce-advanced'),
+
+			// From plugins
+			'hr' => __('Horizontal line', 'tinymce-advanced'),
+			'link' => __('Insert/edit link', 'tinymce-advanced'),
+			'unlink' => __('Remove link', 'tinymce-advanced'),
+			'image' => __('Insert/edit image', 'tinymce-advanced'),
+			'charmap' => __('Special character', 'tinymce-advanced'),
+			'pastetext' => __('Paste as text', 'tinymce-advanced'),
+			'print' => __('Print', 'tinymce-advanced'),
+			'anchor' => __('Anchor', 'tinymce-advanced'),
+			'searchreplace' => __('Find and replace', 'tinymce-advanced'),
+			'visualblocks' => __('Show blocks', 'tinymce-advanced'),
+			//'visualchars' => 'Hidden chars',
+			'code' => __('Source code', 'tinymce-advanced'),
+			'fullscreen' => __('Fullscreen', 'tinymce-advanced'),
+			'insertdatetime' => __('Insert date/time', 'tinymce-advanced'),
+			'media' => __('Insert/edit video', 'tinymce-advanced'),
+			'nonbreaking' => __('Nonbreaking space', 'tinymce-advanced'),
+			'table' => __('Table', 'tinymce-advanced'),
+			'ltr' => __('Left to right', 'tinymce-advanced'),
+			'rtl' => __('Right to left', 'tinymce-advanced'),
+			'emoticons' => __('Emoticons', 'tinymce-advanced'),
+			'forecolor' => __('Text color', 'tinymce-advanced'),
+			'backcolor' => __('Background color', 'tinymce-advanced'),
+
+			// Layer plugin ?
+			'insertlayer' => __('Layer', 'tinymce-advanced'),
+
+			// WP
+			'wp_adv'		=> __('Toolbar Toggle', 'tinymce-advanced'),
+			'wp_help'		=> __('Keyboard Shortcuts', 'tinymce-advanced'),
+			'wp_more'		=> __('Read more...', 'tinymce-advanced'),
+			'wp_page'		=> __('Page break', 'tinymce-advanced'),
+		);
+
+//************ ORIGINAL
+/*
 		$buttons = array(
 			// Core
 			'bold' => 'Bold',
@@ -294,6 +360,8 @@ class Tinymce_Advanced {
 			'wp_more'		=> 'Read more...',
 			'wp_page'		=> 'Page break',
 		);
+*/
+//************ FI
 
 		// add/remove allowed buttons
 		$buttons = apply_filters( 'tadv_allowed_buttons', $buttons );
