@@ -535,6 +535,11 @@ class Tinymce_Advanced {
 			$init['paste_data_images'] = true;
 		}
 
+//XTEC ************ AFEGIT - Allow the "embed" tag
+//2015.02.17 @aginard
+        $init['extended_valid_elements'] = 'embed[*]';
+//************ FI
+
 		return $init;
 	}
 
