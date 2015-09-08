@@ -1,9 +1,9 @@
 === TinyMCE Advanced ===
 Contributors: azaozz
 Tags: wysiwyg, formatting, tinymce, write, editor
-Requires at least: 4.0
-Tested up to: 4.0
-Stable tag: 4.1.1
+Requires at least: 4.2
+Tested up to: 4.2
+Stable tag: 4.1.9
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,15 @@ With this plugin you will also be able to enable the TinyMCE menu. It is a conve
 Best is to install directly from WordPress. If manual installation is required, please make sure that the plugin files are in a folder named "tinymce-advanced" (not two nested folders) in the WordPress plugins folder, usually "wp-content/plugins".
 
 == Changelog ==
+
+= 4.1.9 =
+* Updated for WordPress 4.2 and TinyMCE 4.1.9.
+* Fixed bugs with showing oEmbed previews when pasting an URL.
+* Fixed bugs with getting the content from TinyMCE with line breaks.
+
+= 4.1.7 =
+* Updated for WordPress 4.1 and TinyMCE 4.1.7.
+* Fixed bug where consecutive caption shortcodes may be split with an empty paragraph tag.
 
 = 4.1.1 =
 * Fix bug with image captions when wpautop is disabled.
